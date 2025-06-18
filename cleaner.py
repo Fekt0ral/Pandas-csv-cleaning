@@ -1,12 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-#import os
 import numpy as np
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
-
-# Open file 'customers.csv' if folder 'CSV' and convert it into df
-#path = os.path.join('CSV', 'customers.csv')
 
 # Open csv file as df and parse date column
 df = pd.read_csv('customers.csv', parse_dates=['registration_date'])
